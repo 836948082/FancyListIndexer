@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:poplar="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/lv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.runtai.fancylistindexer.ui.FancyIndexer
+        android:id="@+id/bar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        poplar:additionalTipOffset="40dip"
+        poplar:fontColor="#ffa0a0a0"
+        poplar:maxBezierHeight="150dip"
+        poplar:maxBezierWidth="180dip"
+        poplar:maxFontSize="60"
+        poplar:minFontSize="32"
+        poplar:tipFontSize="72"
+        poplar:widthOffset="15dip" />
+
+    <TextView
+        android:id="@+id/tv_index_center"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_index"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:visibility="gone" />
+
+</RelativeLayout>
